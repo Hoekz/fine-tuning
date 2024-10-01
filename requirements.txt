@@ -1,2 +1,5 @@
-unsloth
+datasets
 torch
+transformers
+trl
+unsloth
