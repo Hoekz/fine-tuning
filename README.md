@@ -13,7 +13,8 @@ pip install -r requirements.txt
 Use the `dataset.py` script to generate a dataset for training from a codebase.
 
 ```sh
-python dataset.py ../rfp-assistant 1000 ./dataset
+#                 <repo path> <# samples> <output path> [output naming offset]
+python dataset.py ./path-to-repo 1000 ./dataset 0
 ```
 
 ## Training

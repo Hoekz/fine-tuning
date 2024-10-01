@@ -44,7 +44,7 @@ def lang_from_filename(filename: str):
   return filename.split(".")[-1]
 
 def format_code_snippet(code: str, snippet: CodeSnippet) -> str:
-  return "<TYPE>" + snippet.type + "</TYPE>\n<CODE>\n" + code[:snippet.start] + "<CURSOR />" + code[snippet.end:] + "\n</CODE>\n<SNIPPET>\n" + code[snippet.start:snippet.end] + "\n</SNIPPET>"
+  return "<CODE>\n" + code[:snippet.start] + "<CURSOR />" + code[snippet.end:] + "\n</CODE>\n<SNIPPET>\n" + code[snippet.start:snippet.end] + "\n</SNIPPET>"
 
 def format_completion(current: str, open_files: List[str], always_open_files: List[str], files: List[CodeFile], snippet: Optional[CodeSnippet] = None) -> str:
   lookup = { f.path: f for f in files }
