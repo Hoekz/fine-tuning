@@ -1,6 +1,6 @@
 import sys
 import random
-from src.code import code_from_repo, format_completion
+from src.codebase import code_from_repo, format_completion
 from src.types import CodeFile, CodeSnippet
 from src.snippet import random_snippets
 

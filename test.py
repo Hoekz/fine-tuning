@@ -1,4 +1,4 @@
-from src.code import code_from_repo, format_completion
+from src.codebase import code_from_repo, format_completion
 
 if __name__ == "__main__":
   project = code_from_repo("./")

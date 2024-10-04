@@ -11,7 +11,7 @@ dtype = None
 model_name = 'unsloth/Llama-3.2-1B'
 
 def train_model(folder):
-  model, tokenizer = FastLanguageModel.from_pretrained(model_name=model_name, max_seq_lentgh=max_seq_length, dtype=dtype)
+  model, tokenizer = FastLanguageModel.from_pretrained(model_name=model_name, max_seq_length=max_seq_length, dtype=dtype)
 
   model = FastLanguageModel.get_peft_model(
     model,
